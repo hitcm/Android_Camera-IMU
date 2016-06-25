@@ -1,0 +1,9 @@
+<launch>
+
+   <node name="republish" type="republish" pkg="image_transport" output="screen" args="compressed in:=/android/image_raw raw out:=/camera/image_raw" >
+   </node >
+
+	<node pkg="rviz" type="rviz" name="rviz" args="-d android_cameara_imu.rviz" output="log">
+   </node>
+
+</launch>
